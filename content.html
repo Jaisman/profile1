@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor</title>
+</head>
+<style>
+   #profile {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    margin-left: 100px;
+    margin-top: 40px;
+   }
+   #name {
+    font-size: large;
+    margin-left: 358px;
+    margin-top: -157px;
+   }
+   #admin {
+    display: inline;
+    margin-left: 353px;
+    background-color: tomato;
+    padding: 4px;
+    border-radius: 4px;
+    border: groove tomato;
+   }
+   #speaker {
+        display: inline;
+        margin-left: 17px;
+   }
+   #location {
+    margin-left: 353px;
+   }
+   img {
+    height: 20px;
+   }
+   .stats {
+    display: inline-block;
+    margin-top: -10px;
+   }
+   .stats p {
+    border-radius: 1px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 10px;
+   }
+   #follow {
+    border-radius: 1px;
+    border: 1px solid black;
+    background-color: rgb(121, 121, 214);
+    display: inline-block;
+    padding: 6px; /* Increased size */
+    cursor: pointer; /* Change cursor on hover to indicate interactivity */
+   }
+   #all {
+    border-color: rgb(43, 43, 43);
+    background-color: rgb(215, 245, 235);
+   }
+   #skill {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+#bio {
+    display: flex;
+    flex-direction: column; /* Display child elements in a column */
+    margin-top: 20px; /* Add some space between skills and bio */
+    border: 1px solid black; /* Add a border */
+    padding: 10px; /* Add padding for better visual appearance */
+    max-width: 600px; /* Limit the width of the bio box */
+}
+#write{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top:-265px;
+    border: 1px solid black;
+    padding-left: 196px;
+    padding-top: -43px;
+    padding-bottom:-22px;
+    padding-right: 129px;
+    max-width: 600px;
+}
+#social{
+    margin-top: -187px;
+    margin-left: 1000px;
+    display: flex;
+    
+}
+#social img{
+    width: 60px;
+    height: 60px;
+}
+#badges {
+    margin-left: 600px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; /* Allow badges to wrap to the next line */
+}
+
+#badges img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make the images round */
+    margin: 5px; /* Add margin between badges */
+    justify-content: space-around;
+}
+#adviser-tag {
+        font-family: fantasy;
+        color: black;
+        font-size: xx-large;
+        position: fixed;
+        top: 0;
+        left: 20px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 0 0 10px 10px;
+    }
+</style>
+<body>
+    <div id="adviser-tag">adviser</div>
+    <div id="all">
+        <img id="profile" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMHBpY3R1cmV8ZW58MHx8MHx8fDA%3D" alt="">
+        <p id="name"><strong>John Doe</strong></p>
+        <div>
+            <p id="admin">Admin</p>
+            <p id="speaker">Speaker</p>
+        </div>
+        <div id="location">
+            <p>Founder and CTO at <b>Hubspot</b></p>
+            <p> <img src="https://media.istockphoto.com/id/469568948/photo/a-large-red-map-pointer-isolated-on-a-white-background.webp?b=1&s=170667a&w=0&k=20&c=dHWkzrBQyMSG5soZ51-6BrfSVs_6YpBv2GqkBIhZmnE=" alt="">Boston,MA,United States</p>
+            <div class="stats">
+                <p id="followers">440 followers</p>
+                <p id="following">31 following</p>
+            </div>
+            <p id="follow" onclick="increaseFollowers()">+Follow</p>
+        </div>
+    </div>
+    <div id="skill">
+        <p><b>My Core Skills:</b></p>
+        <p style="border: 1px solid rgb(219, 217, 217); background-color: rgb(238, 102, 52); padding:6px;color: beige;">Inbound Marketing &#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p>Entrepreneurship&#9733;&#9733;&#9733;</p>
+        <p>Growth Marketing&#9733;&#9733;</p>
+    </div>
+    <div id="content">
+    <div id="bio">
+        <h4>Professional Bio</h4>
+        <p>Career startup guy.</p>
+        <p>Author of the book "Inbound Marketing"</p>
+        <p>Founder of HubSpot, a venture-backed software startup,Hubspot offers the industriess first inbound marketing system for small business. The software is available as a hosted service.</p>
+    </div>
+<div id="write">
+    <h4 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: x-large;margin-bottom: 6px;">Where I write</h4>
+    <p style="font-size: larger; font-weight: bolder; font-family: cursive;color: darkblue;">Inbound org</p>
+    <p style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: bolder;margin-top: -10px;">On Startups</p>
+    <p style="font-family: fantasy; margin-top: -10px;">Linked In</p>
+    <p style="font-weight: 900;font-family:'Times New Roman', Times, serif;margin-top: -4px;">HubSpot</p>
+</div>
+</div>
+<div id="social">
+<img style="border-radius: 6px;" src="https://media.istockphoto.com/id/839499740/photo/letter-f-3d-render-illustration-in-white-background.webp?b=1&s=170667a&w=0&k=20&c=vgIlzifRAb4qKYQ_v9-7p6aGcZIiDkFV8-QohFcx7hA=" alt="">
+<img style="margin-left: 10px;border-radius: 6px;" src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZmFjZWJvb2slMjBpY29ufGVufDB8fDB8fHww" alt="">
+<img style="margin-left: 10px; border-radius: 6px;" src="https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFjZWJvb2slMjBpY29ufGVufDB8fDB8fHww" alt="">
+<img style="margin-left: 10px;border-radius: 6px;" src="https://images.unsplash.com/photo-1614680376408-81e91ffe3db7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmFjZWJvb2slMjBpY29ufGVufDB8fDB8fHww" alt="">
+</div>
+<p style="margin-left: 600px;margin-top: 176px;font-size: xx-large;font-family:Arial, Helvetica, sans-serif;background-color: aquamarine;">My Badges</p>
+<div id="badges">
+    <img src="https://images.unsplash.com/photo-1602265568624-29e8dc535bd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aHVic3BvdCUyMGNlcnRpZmljYXRpb258ZW58MHx8MHx8fDA%3D" alt="">
+    <img src="https://plus.unsplash.com/premium_photo-1675793715068-8cd9ce15f430?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bG9nb3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+    <img src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxvZ298ZW58MHx8MHx8fDA%3D" alt="">
+    <img src="https://media.istockphoto.com/id/1088987148/photo/organic-leaf-symbol-for-logo.webp?b=1&s=170667a&w=0&k=20&c=8EJRLNKYZ9q-5z8Bp_1rxkUbmNnkrL-EQVCHPQhAqIY=" alt="">
+    <img src="https://images.unsplash.com/photo-1603352525945-bb62a311295b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYWRlbWFya3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+</div>
+    <script>
+        function increaseFollowers() {
+            // Get the followers count element
+            var followersCount = document.getElementById("followers");
+
+            // Extract the current followers count
+            var currentCount = parseInt(followersCount.innerText);
+
+            // Increment the followers count
+            currentCount++;
+
+            // Update the followers count element
+            followersCount.innerText = currentCount + " followers";
+        }
+    </script>
+</body>
+</html>
