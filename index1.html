@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>front page</title>
+</head>
+<style>
+    #img1 {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: auto;
+        z-index: -1;
+    }
+
+    body {
+        background-color: #d89bc4;
+        background-image: url('https://cdn.suwalls.com/wallpapers/abstract/low-opacity-curves-25875-2880x1800.jpg');
+        width: 100%;
+        height: 100%;
+        background-repeat: repeat-x repeat-y;
+        background-position: center;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #login {
+        background-color: white;
+        border-radius: 10px;
+        border: 2px groove gray;
+        padding: 30px;
+        box-sizing: border-box;
+        text-align: center;
+        height: 400px;
+        width: 600px; /* Adjust width as needed */
+        margin-left: -400px;
+        margin-top: 400px;
+        font-weight: bold;
+        background-color: antiquewhite;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    #signup {
+        text-decoration: none;
+        color: black;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    input[type=checkbox] {
+        color: rgb(60, 58, 58);
+    }
+
+    #check1 {
+        margin-top: 10px;
+        color: rgb(60, 58, 58);
+    }
+
+    input[type=submit] {
+        background-color: aquamarine;
+        border: 6px gray;
+        font-size: medium;
+    }
+</style>
+<body>
+    <img id="img1" src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D" alt="">
+    <div id="login">
+        <h3>Login</h3>
+        <p>Doesn't have an account yet? <a id="signup" href="./profile.html">Sign up</a></p>
+        <form action="/action_page.php">
+            <label for="mail">Email Address</label><br>
+            <input id="mail" type="email" required><br>
+            <label for="password">Password</label><br>
+            <input id="password" type="password" required><br>
+        </form>
+        <form id="check1">
+            <input id="check" type="checkbox">
+            <label for="check">Remember me</label><br><br>
+            <label for="submit"></label>
+            <a href="./tutor1.html">Login<input style="border: 6px gray; font-size: medium;" id="submit" type="submit"  ><br></a>
+        </form>
+    </div>
+</body>
+</html>
